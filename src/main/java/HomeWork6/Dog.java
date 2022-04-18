@@ -8,19 +8,22 @@ public class Dog extends Animal {
 
     @Override
     void runInfo() {
-        if (run > 500) {
-            System.out.println("Собака " + name + " не пробежит: " + run + " м ");
+        //super.runInfo();
+        if (getRun() > 500) {
+            System.out.println("Собака " + getRun() + " м не пробежит!");
         } else {
-            System.out.println("Собака " + name + " пробежала: " + run + " м ");
+            System.out.println("Собака пробежала " + getRun() + " м ");
         }
     }
 
     @Override
     void swimInfo() {
-        if (swim > 10) {
-            System.out.println("Собака " + name + " не проплывёт: " + swim + " м ");
+        //super.swimInfo();
+        if (getSwim() > 10) {
+            System.out.println("Собака " + getSwim() + " м не проплывёт!");
         } else {
-            System.out.println("Собака " + name + " проплыла: " + swim + " м ");
+            System.out.println("Собака проплыла " + getSwim() + " м ");
         }
     }
+
 }

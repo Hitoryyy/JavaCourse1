@@ -1,9 +1,13 @@
 package HomeWork6;
 
+import jdk.jfr.SettingControl;
+
 public class Animal {
-    protected String name;
-    protected int run;
-    protected int swim;
+
+   private String name;
+   private int run;
+   private int swim;
+
 
     public Animal(String name, int run, int swim) {
         this.name = name;
@@ -35,11 +39,13 @@ public class Animal {
         this.swim = swim;
     }
 
+
     void runInfo() {
-        System.out.println("Животное пробежало: " + run + " м ");
+        System.out.println("Животное пробежало: " + getRun() + " м ");
     }
 
     void swimInfo() {
-        System.out.println("Животное проплыло: " + swim + " м ");
+        System.out.println("Животное проплыло: " + getSwim() + " м ");
     }
+
 }

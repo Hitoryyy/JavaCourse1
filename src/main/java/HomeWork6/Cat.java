@@ -6,19 +6,22 @@ public class Cat extends Animal {
         super(name, run, swim);
     }
 
-
-
     @Override
-    void runInfo(){
-        if (run > 200) {
-            System.out.println("Кот " + name + " не пробежит " + run + " м ");
+    void runInfo() {
+        //super.runInfo();
+        if (getRun() > 200) {
+            System.out.println("Кот " + getRun() + " не пробежит!");
         } else {
-            System.out.println("Кот " + name + " пробежал " + run + " м ");
+            System.out.println("Кот пробежал " + getRun() + " м ");
         }
     }
 
     @Override
-    void swimInfo(){
-        System.out.println("Коты не умеют плавать!");
+    void swimInfo() {
+        //super.swimInfo();
+        System.out.println("Коты плавать не умеют!");
     }
+
+
+
 }

@@ -36,4 +36,8 @@ public class Car extends Transport {
     }
 
 
+    @Override
+    public void wroomWroom() {
+        System.out.println("Wroooooom");
+    }
 }
